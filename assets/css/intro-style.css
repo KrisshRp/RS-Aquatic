@@ -58,7 +58,7 @@ background-image: url(../img/background/beautiful-colorful-siamese-betta-fish.jp
 /*
 @media only screen and (max-width: 995px) {
   .bg-img-SINGLE {
-    background-image: url(../intro-images/img/background/SINGLE-bg-mobile.jpg);
+    background-image: url(../img/background/SINGLE-bg.jpg);
   }
 }
 */
@@ -66,13 +66,13 @@ background-image: url(../img/background/beautiful-colorful-siamese-betta-fish.jp
 
 /* 1.2. benefits IMG BACKGROUND */
 .img-fullwidth-benefits-carousel-1 {
-background-image: url(../intro-images/img/benefits/benefits-carousel-1.jpg);
+background-image: url(../img/benefits/benefits-carousel-1.jpg);
 }
 
 
 /* 1.3. parallax IMG BACKGROUND */
 .parallax-purchase {
-background-image: url(../intro-images/img/parallax/parallax-purchase.jpg);
+background-image: url(../img/parallax/parallax-purchase.jpg);
 }
 
 
@@ -1779,7 +1779,7 @@ background: rgba(0, 0, 0, .4);
 /* the button */
 .the-button-wrapper {
 position: relative;
-width: 165px;
+width: max-content;
 height: auto;
 line-height: 1.5;
 padding: 0;
