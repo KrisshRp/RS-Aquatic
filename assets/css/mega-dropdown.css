@@ -1,0 +1,129 @@
+/* Mega Dropdown Menu Styling */
+
+/* Main dropdown container */
+.mega-dropdown {
+    position: static !important;
+}
+
+/* Dropdown content */
+.mega-dropdown-menu {
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    border-radius: 0;
+    margin-top: 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Show dropdown on hover */
+.mega-dropdown:hover .mega-dropdown-menu {
+    display: block;
+}
+
+/* Dropdown columns */
+.mega-dropdown-column {
+    padding: 15px 20px;
+}
+
+/* Dropdown heading */
+.mega-dropdown-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Dropdown links */
+.mega-dropdown-heading .mega-dropdown-link {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: var(--color-body-text-dark) !important;
+    padding: 8px 0;
+    transition: all 0.3s ease;
+}
+
+.mega-dropdown-link:hover {
+    color: var(--color-primary);
+    padding-left: 5px;
+}
+
+/* Dropdown list */
+.mega-dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mega-dropdown-list li {
+    margin-bottom: 0;
+}
+
+.mega-dropdown-list .mega-dropdown-link {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: var(--color-body-text-dark) !important;
+    padding: 8px 0;
+    transition: all 0.3s ease;
+}
+
+/* Featured product in dropdown */
+.mega-dropdown-featured {
+    padding: 15px 15px 35px 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.mega-dropdown-featured-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.mega-dropdown-featured-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+.mega-dropdown-featured-price {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .mega-dropdown-menu {
+        position: static;
+        width: 100%;
+        padding: 10px 0;
+        box-shadow: none;
+    }
+    
+    .mega-dropdown-column {
+        padding: 10px;
+    }
+    
+    .mega-dropdown:hover .mega-dropdown-menu {
+        display: none;
+    }
+    
+    .mega-dropdown.open .mega-dropdown-menu {
+        display: block;
+    }
+}

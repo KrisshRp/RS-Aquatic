@@ -55,6 +55,33 @@ $(function() {
         cssEase: "ease",
         speed: 500
     });
+    
+    // Product cards carousel
+    $(".slick-must-haves-2").slick({
+        arrows: true,
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        prevArrow: "<i class='slick-prev icon ion-chevron-left'></i>",
+        nextArrow: "<i class='slick-next icon ion-chevron-right'></i>",
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
     // 3-2. slick right
     $(".slick-right-alternative").slick({
         arrows: true,
@@ -69,6 +96,33 @@ $(function() {
         autoplaySpeed: 4000,
         cssEase: "ease",
         speed: 500
+    });
+    
+    // Mega dropdown menu functionality
+    $(document).ready(function() {
+        // For mobile: toggle dropdown on click
+        if ($(window).width() > 992) {
+            $('.mega-dropdown > a').on('click', function(e) {
+                e.preventDefault();
+                $(this).parent().toggleClass('open');
+                $(this).next('.mega-dropdown-menu').slideToggle();
+            });
+        }
+        
+        // Close dropdown when clicking outside
+        $(document).on('click', function(e) {
+            if (!$(e.target).closest('.mega-dropdown').length) {
+                $('.mega-dropdown').removeClass('open');
+                if ($(window).width() > 992) {
+                    $('.mega-dropdown-menu').slideUp();
+                }
+            }
+        });
+        
+        // Prevent dropdown from closing when clicking inside it
+        $('.mega-dropdown-menu').on('click', function(e) {
+            e.stopPropagation();
+        });
     });
     // 3-3. slick fullscreen
     $(".slick-fullscreen").slick({
