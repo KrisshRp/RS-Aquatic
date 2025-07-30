@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            About || RS Aquatic
+        </title>
+        <meta content="" name="description">
+        <meta content="" name="author">
+        <meta content="" name="keywords">
+        <!-- favicon -->
+        <link rel="icon" href="assets/img/favicon.ico" type="image/png">
+        <meta content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+        <!-- The Dive v1.2 || ex nihilo || September 2017 -->
+        <!-- style start -->
+        <!-- jQuery UI CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css">
+        <!-- Slick Carousel CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Ionicons -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"> -->
+        <!-- fullPage.js CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css">
+        <!-- Custom Styles -->
+        <link href="assets/css/intro-style.css" media="all" rel="stylesheet" type="text/css">
+        <!-- Product Cards CSS -->
+        <link href="assets/css/product-cards.css" media="all" rel="stylesheet" type="text/css">
+        <!-- Mega Dropdown CSS -->
+        <link href="assets/css/mega-dropdown.css" media="all" rel="stylesheet" type="text/css"><!-- style end -->
+        <!-- google fonts start -->
+        <link href="../../css?family=Raleway:100,200,300,400,500,600,700,800,900%7CMontserrat:400,700%7COswald:300,400,700" rel="stylesheet" type="text/css">
+        <!-- google fonts end -->
+    </head>
+    <body>
+        <!-- preloader start -->
+        <div class="preloader-bg"></div>
+        <div id="preloader">
+            <div id="preloader-status">
+                <div class="preloader-position loader">
+                    <span></span>
+                </div>
+            </div>
+        </div><!-- preloader end -->
+        <!-- navigation start -->
+        <nav class="navbar navbar-fixed-top navbar-bg-switch">
+            <!-- container start -->
+            <div class="container">
+                <div class="navbar-header fadeIn-element">
+                    <!-- logo start -->
+                    <div class="logo">
+                        <a class="navbar-brand logo" href="#">
+                        <!-- logo light start -->
+                        <img alt="Logo" class="logo-light" src="assets/img/logo-secondery.png"><!-- logo light end -->
+                        <!-- logo dark start -->
+                        <img alt="Logo" class="logo-dark" src="assets/img/logo-primary.png"><!-- logo dark end -->
+                        </a>
+                    </div><!-- logo end -->
+                </div>
+                <!-- main navigation start -->
+                <div class="main-navigation fadeIn-element">
+                    <div class="navbar-header">
+                        <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle
+                        navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <!-- menu start -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown mega-dropdown">
+                                <a class="page-scroll link-underline-menu" href="/index.html">Home</a>
+                            </li>
+                            
+                            <li class="dropdown mega-dropdown">
+                                <a class="page-scroll link-underline-menu" href="/about.html">About Us</a>
+                            </li>
+                            
+                            <li class="dropdown mega-dropdown">
+                                <a class="page-scroll link-underline-menu" href="#">Category</a>
+                                <div class="dropdown-menu mega-dropdown-menu">
+                                    <div class="container">
+                                        <!-- Left Section - Categories -->
+                                        <div class="col-md-4 category-sidebar">
+                                            <h4 class="category-sidebar-title">Categories</h4>
+                                            <ul class="category-list">
+                                                <li class="category-item active">
+                                                    <button onclick="opencontent('co2')" class="category-link"><span>CO2</span></button>
+                                                </li>
+                                                <li class="category-item">
+                                                    <button onclick="opencontent('fertilizer')" class="category-link"><span>Fertilizer</span></button>
+                                                </li>
+                                                <li class="category-item">
+                                                    <button onclick="opencontent('substrate')" class="category-link"><span>Substrate</span></button>
+                                                </li>
+                                                <li class="category-item">
+                                                    <button onclick="opencontent('decor')" class="category-link"><span>Decor</span></button>
+                                                </li>
+                                                <li class="category-item">
+                                                    <button onclick="opencontent('aquarium')" class="category-link"><span>Aquarium</span></button>
+                                                </li>
+                                                <li class="category-item">
+                                                    <button onclick="opencontent('equipment')" class="category-link"><span>Equipment</span></button>
+                                                </li>
+                                                <li class="category-item">
+                                                    <button onclick="opencontent('accessories')" class="category-link"><span>Accessories</span></button>
+                                                </li>
+                                                <li class="category-item">
+                                                    <button onclick="opencontent('plants')" class="category-link"><span>Plants</span></button>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Right Section - Subcategories -->
+                                        <div class="col-md-8 category-content">
+                                            <!-- CO2 Content -->
+                                            <div class="category-content-section active" id="co2-content">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">CO2 Systems</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">Complete CO2 Kits</a></li>
+                                                            <li><a href="#" class="subcategory-link">CO2 Cylinders</a></li>
+                                                            <li><a href="#" class="subcategory-link">Regulators</a></li>
+                                                            <li><a href="#" class="subcategory-link">Solenoids</a></li>
+                                                            <li><a href="#" class="subcategory-link">Bubble Counters</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">CO2 Accessories</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">Diffusers</a></li>
+                                                            <li><a href="#" class="subcategory-link">Drop Checkers</a></li>
+                                                            <li><a href="#" class="subcategory-link">CO2 Tubing</a></li>
+                                                            <li><a href="#" class="subcategory-link">Check Valves</a></li>
+                                                            <li><a href="#" class="subcategory-link">Inline Atomizers</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">CO2 Alternatives</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">Liquid Carbon</a></li>
+                                                            <li><a href="#" class="subcategory-link">CO2 Tablets</a></li>
+                                                            <li><a href="#" class="subcategory-link">DIY CO2 Kits</a></li>
+                                                            <li><a href="#" class="subcategory-link">Yeast-Based Systems</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Fertilizer Content -->
+                                            <div class="category-content-section" id="fertilizer-content">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">Liquid Fertilizers</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">All-in-One Solutions</a></li>
+                                                            <li><a href="#" class="subcategory-link">Macro Nutrients</a></li>
+                                                            <li><a href="#" class="subcategory-link">Micro Nutrients</a></li>
+                                                            <li><a href="#" class="subcategory-link">Iron Supplements</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">Root Tabs</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">Complete Root Tabs</a></li>
+                                                            <li><a href="#" class="subcategory-link">Iron Root Tabs</a></li>
+                                                            <li><a href="#" class="subcategory-link">Clay-Based Tabs</a></li>
+                                                            <li><a href="#" class="subcategory-link">Long-Release Tabs</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">Dry Fertilizers</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">Macro Packages</a></li>
+                                                            <li><a href="#" class="subcategory-link">Micro Packages</a></li>
+                                                            <li><a href="#" class="subcategory-link">Individual Compounds</a></li>
+                                                            <li><a href="#" class="subcategory-link">Custom Mixes</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Substrate Content -->
+                                            <div class="category-content-section" id="substrate-content">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">Planted Substrates</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">Aqua Soil</a></li>
+                                                            <li><a href="#" class="subcategory-link">Plant Substrate</a></li>
+                                                            <li><a href="#" class="subcategory-link">Nutrient-Rich Soil</a></li>
+                                                            <li><a href="#" class="subcategory-link">Clay-Based Substrate</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">Decorative Substrates</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">Aquarium Sand</a></li>
+                                                            <li><a href="#" class="subcategory-link">Aquarium Gravel</a></li>
+                                                            <li><a href="#" class="subcategory-link">Colored Substrates</a></li>
+                                                            <li><a href="#" class="subcategory-link">River Pebbles</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">Substrate Additives</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">Substrate Additives</a></li>
+                                                            <li><a href="#" class="subcategory-link">Substrate Fertilizers</a></li>
+                                                            <li><a href="#" class="subcategory-link">Substrate Helpers</a></li>
+                                                            <li><a href="#" class="subcategory-link">Bacteria Starters</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Decor Content -->
+                                            <div class="category-content-section" id="decor-content">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">Hardscape</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">Driftwood</a></li>
+                                                            <li><a href="#" class="subcategory-link">Aquarium Rocks</a></li>
+                                                            <li><a href="#" class="subcategory-link">Stone Arrangements</a></li>
+                                                            <li><a href="#" class="subcategory-link">Lava Rock</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">Ornaments</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">Artificial Caves</a></li>
+                                                            <li><a href="#" class="subcategory-link">Decorative Figures</a></li>
+                                                            <li><a href="#" class="subcategory-link">Themed Ornaments</a></li>
+                                                            <li><a href="#" class="subcategory-link">Bubbling Ornaments</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">Backgrounds</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">3D Backgrounds</a></li>
+                                                            <li><a href="#" class="subcategory-link">Printed Backgrounds</a></li>
+                                                            <li><a href="#" class="subcategory-link">Background Films</a></li>
+                                                            <li><a href="#" class="subcategory-link">Custom Backgrounds</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Aquarium Content -->
+                                            <div class="category-content-section" id="aquarium-content">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">Aquarium Tanks</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">Nano Tanks</a></li>
+                                                            <li><a href="#" class="subcategory-link">Medium Tanks</a></li>
+                                                            <li><a href="#" class="subcategory-link">Large Tanks</a></li>
+                                                            <li><a href="#" class="subcategory-link">Custom Tanks</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">Aquarium Kits</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">Beginner Kits</a></li>
+                                                            <li><a href="#" class="subcategory-link">Planted Tank Kits</a></li>
+                                                            <li><a href="#" class="subcategory-link">Reef Tank Kits</a></li>
+                                                            <li><a href="#" class="subcategory-link">Betta Kits</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">Aquarium Stands</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">Wooden Stands</a></li>
+                                                            <li><a href="#" class="subcategory-link">Metal Stands</a></li>
+                                                            <li><a href="#" class="subcategory-link">Cabinet Stands</a></li>
+                                                            <li><a href="#" class="subcategory-link">Custom Stands</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Equipment Content -->
+                                            <div class="category-content-section" id="equipment-content">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">Filtration</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">Canister Filters</a></li>
+                                                            <li><a href="#" class="subcategory-link">HOB Filters</a></li>
+                                                            <li><a href="#" class="subcategory-link">Sponge Filters</a></li>
+                                                            <li><a href="#" class="subcategory-link">Filter Media</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">Lighting</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">LED Lights</a></li>
+                                                            <li><a href="#" class="subcategory-link">T5 Fixtures</a></li>
+                                                            <li><a href="#" class="subcategory-link">Light Controllers</a></li>
+                                                            <li><a href="#" class="subcategory-link">Light Accessories</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">Heating & Cooling</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">Heaters</a></li>
+                                                            <li><a href="#" class="subcategory-link">Chillers</a></li>
+                                                            <li><a href="#" class="subcategory-link">Thermometers</a></li>
+                                                            <li><a href="#" class="subcategory-link">Controllers</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Accessories Content -->
+                                            <div class="category-content-section" id="accessories-content">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">Maintenance Tools</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">Algae Scrapers</a></li>
+                                                            <li><a href="#" class="subcategory-link">Gravel Cleaners</a></li>
+                                                            <li><a href="#" class="subcategory-link">Water Test Kits</a></li>
+                                                            <li><a href="#" class="subcategory-link">Cleaning Brushes</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">Water Treatments</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">Water Conditioners</a></li>
+                                                            <li><a href="#" class="subcategory-link">Bacterial Supplements</a></li>
+                                                            <li><a href="#" class="subcategory-link">Algae Control</a></li>
+                                                            <li><a href="#" class="subcategory-link">pH Adjusters</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">Fish Care</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">Fish Food</a></li>
+                                                            <li><a href="#" class="subcategory-link">Medication</a></li>
+                                                            <li><a href="#" class="subcategory-link">Breeding Equipment</a></li>
+                                                            <li><a href="#" class="subcategory-link">Quarantine Supplies</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Plants Content -->
+                                            <div class="category-content-section" id="plants-content">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">Foreground Plants</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">Carpeting Plants</a></li>
+                                                            <li><a href="#" class="subcategory-link">Low-Growing Plants</a></li>
+                                                            <li><a href="#" class="subcategory-link">Moss Varieties</a></li>
+                                                            <li><a href="#" class="subcategory-link">Small Crypts</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">Midground Plants</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">Medium-Height Plants</a></li>
+                                                            <li><a href="#" class="subcategory-link">Bushy Plants</a></li>
+                                                            <li><a href="#" class="subcategory-link">Colorful Varieties</a></li>
+                                                            <li><a href="#" class="subcategory-link">Anubias Species</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h5 class="subcategory-heading">Background Plants</h5>
+                                                        <ul class="subcategory-list">
+                                                            <li><a href="#" class="subcategory-link">Stem Plants</a></li>
+                                                            <li><a href="#" class="subcategory-link">Tall Plants</a></li>
+                                                            <li><a href="#" class="subcategory-link">Fast-Growing Species</a></li>
+                                                            <li><a href="#" class="subcategory-link">Statement Plants</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="dropdown mega-dropdown">
+                                <a class="page-scroll link-underline-menu" href="/shop.html">Shop</a>
+                            </li>
+                            
+                            <li class="dropdown mega-dropdown">
+                                <a class="page-scroll link-underline-menu" href="/blog-list.html">Blogs</a>
+                            </li>
+
+                            <li class="dropdown mega-dropdown">
+                                <a class="page-scroll link-underline-menu" href="#"><i class="fa-solid fa-magnifying-glass"></i></i></a>
+                            </li>
+                            
+                            <li class="dropdown mega-dropdown">
+                                <a class="page-scroll link-underline-menu" href="#"><i class="fa-solid fa-user-astronaut"></i></i></a>
+                            </li>
+                            
+                            <li class="dropdown mega-dropdown">
+                                <a class="page-scroll link-underline-menu" href="#"><i class="fa-solid fa-cart-flatbed"></i></a>
+                            </li>
+                        </ul><!-- menu end -->
+                    </div>
+                </div><!-- main navigation end -->
+            </div><!-- container end -->
+        </nav><!-- navigation end -->
+        <!-- home start -->
+        <div class="upper-page" id="home">
+            <!-- hero bg start -->
+            <div class="hero-fullscreen overlay overlay-top-bottom-dark-15">
+                <!-- single image start -->
+                <div class="hero-fullscreen-FIX overlay overlay-dark-70">
+                    <div class="hero-bg bg-img-SINGLE"></div>
+                </div><!-- single image end -->
+            </div><!-- hero bg end -->
+            <!-- center container start -->
+            <div class="center-container">
+                <!-- center block start -->
+                <div class="center-block">
+                    <!-- home subtitle start -->
+                    <h2 class="home-page-title fadeIn-element">
+                        Welcome to
+                    </h2><!-- home subtitle end -->
+                    <!-- divider start -->
+                    <div class="inner-divider-half"></div><!-- divider end -->
+                    <!-- home title start -->
+                    <h1 class="home-page-title fadeIn-element">
+                        RS Aquatic
+                    </h1><!-- home title end -->
+                    <h3 class="home-page-title fadeIn-element">Your Premier Aquarium Destination in India</h3>
+                    <!-- divider start -->
+                    <div class="inner-divider-half"></div><!-- divider end -->
+                    <!-- demos launcher start -->
+                    <a class="page-scroll" href="/shop.html">
+                    <div class="the-button-wrapper fadeIn-element">
+                        <div class="the-button-light">
+                            Shop with us
+                        </div>
+                    </div>
+                    </a><!-- demos launcher end -->
+                </div><!-- center block end -->
+            </div><!-- center container end -->
+            <!-- scroll indicator start -->
+            <div class="scroll-indicator">
+                <div class="scroll-indicator-wrapper">
+                    <div class="scroll-line"></div>
+                </div>
+            </div><!-- scroll indicator end -->
+        </div><!-- home end -->
+        <!-- about start -->
+        <section id="about">
+            <!-- container start -->
+            <div class="container sections">
+                <!-- divider start -->
+                <div class="inner-divider"></div><!-- divider end -->
+                <!-- row start -->
+                <div class="row">
+                    <!-- col start -->
+                    <div class="col-lg-12">
+                        <!-- page title start -->
+                        <h2 class="section-heading">
+                            About RS Aquatic
+                        </h2><!-- page title end -->
+                        <!-- divider start -->
+                        <div class="inner-divider-ultra-half"></div><!-- divider end -->
+                        <!-- page subtitle start -->
+                        <h2 class="section-subheading">
+                            <span>Crafting underwater worlds</span> since 2009. We transform spaces with stunning aquatic ecosystems.
+                        </h2><!-- page subtitle end -->
+                    </div><!-- col end -->
+                </div><!-- row end -->
+            </div><!-- container end -->
+            <!-- divider start -->
+            <div class="inner-divider"></div><!-- divider end -->
+            <!-- container start -->
+            <div class="container sections">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="about-content">
+                            <p>
+                                With over 15 years of experience in the aquarium industry, RS Aquatic has built a reputation as one of India’s most trusted aquarium solution providers. Our team consists of passionate aquascapers, aquarium designers, and experts who are committed to delivering the highest quality aquarium products and services to our clients.
+                            </p>
+                            <p>
+                                We offer end-to-end solutions for aquarists, from designing custom aquarium setups and selecting the right aquatic plants to providing ongoing maintenance and cleaning services. Whether you're a hobbyist or a business owner looking to enhance your space, RS Aquatic brings nature’s beauty right into your home or office.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div><!-- container end -->
+            <!-- Stats Section -->
+            <div class="container sections">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="stat-item">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Plant Species</div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- container end -->
+
+            <!-- divider start -->
+            <div class="inner-divider"></div><!-- divider end -->
+
+            <!-- Contact Form Section -->
+            <div class="container sections">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="section-heading">
+                            Get In Touch
+                        </h2>
+                        <div class="inner-divider-ultra-half"></div>
+                        <h2 class="section-subheading">
+                            <span>Ready to create</span> your perfect aquatic environment? Let's discuss your vision.
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="inner-divider-half"></div>
+
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <form class="contact-form-clean" id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="form-field">
+                                        <input type="text" id="name" name="name" required>
+                                        <label for="name">Your Name</label>
+                                        <div class="field-line"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="form-field">
+                                        <input type="email" id="email" name="email" required>
+                                        <label for="email">Email Address</label>
+                                        <div class="field-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-field">
+                                        <input type="tel" id="phone" name="phone">
+                                        <label for="phone">Phone Number</label>
+                                        <div class="field-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-field">
+                                        <textarea id="message" name="message" rows="4" required></textarea>
+                                        <label for="message">Your Message</label>
+                                        <div class="field-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <div class="the-button-wrapper">
+                                        <button type="submit" class="the-button">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div><!-- container end -->
+        </section>
+        <!-- about end -->
+        <!-- footer start -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <!-- footer logo start -->
+                    <div class="col-md-6">
+                        <div class="footer-logo">
+                            <a href="#">
+                                <img src="assets/img/logo-secondery.png" alt="RS Aquatic Logo" class="img-fluid">
+                            </a>
+                            <p class="footer-text">Welcome to RS Aquatics, where expertise meets innovation in the world of underwater hobbies. We specialize in premium quality zero silicon aquarium livesto...</p>
+                        </div>
+                    </div><!-- footer logo end -->
+                    <!-- quick links start -->
+                    <div class="col-md-6">
+                        <div class="footer-links">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="/index.html">Home</a></li>
+                                <li><a href="/about.html">About Us</a></li>
+                                <li><a href="/shop.html">Shop</a></li>
+                                <li><a href="/blog.html">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- quick links end -->
+                    <!-- contact info start -->
+                    <div class="col-md-6">
+                        <div class="footer-contact">
+                            <h3>Contact Info</h3>
+                            <ul>
+                                <li><i class="ion-ios-location"></i> 226 Elius Road Agarpara North 24pgs Kolkata, Kolkata, West Bengal, 700058</li>
+                                <li><i class="ion-ios-telephone"></i> +91 123 456 7890</li>
+                                <li><i class="ion-ios-email"></i> info@rsaquatic.com</li>
+                            </ul>
+                            <div class="social-icons">
+                                <a href="#" class=""><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="#" class=""><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="#" class=""><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="#" class=""><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div><!-- contact info end -->
+                    <!-- google map start -->
+                    <div class="col-md-6">
+                        <!-- google map api inframe -->
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d14724.531925573656!2d88.374562!3d22.686093!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDQxJzA5LjkiTiA4OMKwMjInMjguNCJF!5e0!3m2!1sen!2sus!4v1753784818972!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div><!-- google map end -->
+                </div>
+                <!-- copyright start -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-copyright">
+                            <p>&copy; 2024 RS Aquatic. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div><!-- copyright end -->
+            </div>
+        </footer>
+        <!-- footer end -->
+        <!-- divider start -->
+        <!-- to top arrow start -->
+        <a class="page-scroll" href="#home">
+        <div class="to-top-arrow">
+            <span class="ion-ios-arrow-up"></span>
+        </div>
+        </a><!-- to top arrow end -->
+        <!-- scripts start --> 
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js" integrity="sha512-gBYquPLlR76UWqCwD06/xwal4so02RjIR0oyG1TIhSGwmBTRrIkQbaPehPF8iwuY9jFikDHMGEelt0DtY7jtvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <!-- jQuery UI -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- Owl Carousel JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.min.js"></script>
+        <!-- Slick Carousel JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+        <!-- fullPage.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+        <!-- jQuery Countdown -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+        <!-- Custom Scripts -->
+        <script src="assets/js/custome.js"></script>
+        <script src="assets/js/intro.js"></script>
+        <script src="assets/js/the-dive.js"></script><!-- scripts end -->
+    </body>
+</html>
